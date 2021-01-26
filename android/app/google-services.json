@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311808426350",
+    "project_id": "cidade-conectada-83c18",
+    "storage_bucket": "cidade-conectada-83c18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311808426350:android:1b1a49781e84bef353417f",
+        "android_client_info": {
+          "package_name": "com.example.cidade_conectada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311808426350-1lg0atsbk87fmjc4getmvh0ehvec3cnl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4ZhNmhdXEa6OgaZAJxazQKm4x6lA-cgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311808426350-1lg0atsbk87fmjc4getmvh0ehvec3cnl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
