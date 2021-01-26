@@ -16,7 +16,7 @@ class ListTest extends StatelessWidget {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Produtos em Destaque"),
+            title: Text("Empreendimentos e Empreendedores"),
             backgroundColor: colorScheme.primaryVariant,
             centerTitle: true,
             bottom: TabBar(
@@ -32,7 +32,8 @@ class ListTest extends StatelessWidget {
             ),
           ),
           body: StreamBuilder(
-            stream: Firestore.instance.collection("beijodoprazer").snapshots(),
+            stream:
+                Firestore.instance.collection("carnaubinha_touros").snapshots(),
             builder: (_, snapshot) {
               if (!snapshot.hasData)
                 return Center(
@@ -40,6 +41,7 @@ class ListTest extends StatelessWidget {
                 );
               else
                 return MaterialApp(
+                  debugShowCheckedModeBanner: false,
                   home: Scaffold(
                     backgroundColor: colorScheme.primary,
                     body: TabBarView(
@@ -49,7 +51,7 @@ class ListTest extends StatelessWidget {
                           padding: EdgeInsets.all(4.0),
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
+                            crossAxisCount: 3,
                             mainAxisSpacing: 4.0,
                             crossAxisSpacing: 4.0,
                             childAspectRatio: 0.65,

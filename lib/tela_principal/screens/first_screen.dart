@@ -62,11 +62,11 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(
-            label: 'Produtos',
+            label: 'Explorar',
             icon: Icon(Icons.shopping_basket),
           ),
           BottomNavigationBarItem(
-            label: 'Promoções',
+            label: 'Destaques',
             icon: Icon(Icons.fiber_new_sharp),
           ),
           BottomNavigationBarItem(

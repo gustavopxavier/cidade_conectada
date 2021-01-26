@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Beijo do Prazer',
+                    'Cidade Conectada',
                     style: TextStyle(
                         fontSize: 36.0,
                         fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'O seu Sexy Shopping Virtual',
+                  'A sua cidade conectada',
                   style: TextStyle(
                     fontSize: 18,
                     color: colorScheme.surface,
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
         top: 0.0,
       ),
       child: Text(
-        '           Somos uma empresa especializada em vendas de produtos eróticos. Trabalhamos com produtos originais das marcas Hotflowers, PepperBlend, entre outros.',
+        '           O aplicativo Cidade Conectada tem como objetivo fomentar os negócios dos pequenos, médios e grandes empreendimentos e empreendedores da sua cidade.',
         softWrap: true,
         style: TextStyle(
           fontSize: 18,
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Beijo do Prazer',
+      title: 'Cidade Conectada',
       home: Scaffold(
         backgroundColor: colorScheme.primary,
         // appBar: AppBar(
@@ -94,10 +94,10 @@ class HomeScreen extends StatelessWidget {
         body: ListView(
           children: [
             Image.network(
-              'https://firebasestorage.googleapis.com/v0/b/lojaflutterudemy-d6a31.appspot.com/o/card2.png?alt=media&token=58b91f5a-683b-4f4f-80fb-b86c5987bd75',
+              'https://firebasestorage.googleapis.com/v0/b/lojaflutterudemy-d6a31.appspot.com/o/card3.png?alt=media&token=1332e4f6-c2a6-4184-8a4c-b11e141bc650',
               width: 600,
               height: 240,
-              fit: BoxFit.fill,
+              fit: BoxFit.contain,
             ),
             titleSection,
             // buttonSection,
