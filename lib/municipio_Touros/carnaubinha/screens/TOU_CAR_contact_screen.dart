@@ -6,10 +6,10 @@ import 'package:url_launcher/url_launcher.dart';
 // https://github.com/flutter/website/blob/master/examples/layout/lakes/step6/lib/main.dart
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(ContactScreen());
+  runApp(TouCarContactScreen());
 }
 
-class ContactScreen extends StatelessWidget {
+class TouCarContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
@@ -468,7 +468,7 @@ class ContactScreen extends StatelessWidget {
 
 // import 'package:flutter/material.dart';
 
-// class ContactScreen extends StatelessWidget {
+// class TouCarContactScreen extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
 //     final colorScheme = Theme.of(context).colorScheme;

@@ -1,14 +1,12 @@
-import 'package:cidade_conectada/municipio_Touros/carnaubinha/TOU_CAR_main.dart';
-import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_first_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/first_screen.dart';
 import 'package:flutter/material.dart';
 
-class TpExplorerScreen extends StatefulWidget {
+class TouCarTpExplorerScreen extends StatefulWidget {
   @override
-  _TpExplorerScreenState createState() => _TpExplorerScreenState();
+  _TouCarTpExplorerScreenState createState() => _TouCarTpExplorerScreenState();
 }
 
-class _TpExplorerScreenState extends State<TpExplorerScreen> {
+class _TouCarTpExplorerScreenState extends State<TouCarTpExplorerScreen> {
   final List<String> _cidadesTouros = [
     "Carnaubinha",
     "Touros",
@@ -55,7 +53,7 @@ class _TpExplorerScreenState extends State<TpExplorerScreen> {
               context,
               MaterialPageRoute(
                 builder: (_) {
-                  return TouCarMain();
+                  return FirstScreen();
                 },
               ),
             );

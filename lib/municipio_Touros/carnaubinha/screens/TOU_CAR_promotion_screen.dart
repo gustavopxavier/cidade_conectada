@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class PromotionScreen extends StatelessWidget {
+class TouCarPromotionScreen extends StatelessWidget {
   // final DocumentSnapshot snapshot;
 
   // const ListAllProducts({Key key, this.snapshot}) : super(key: key);

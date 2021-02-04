@@ -1,17 +1,21 @@
-import 'package:cidade_conectada/olho_vivo_tecnologia/ovt_screens/ovt_home_screen.dart';
+import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_contact_screen.dart';
+import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_home_screen.dart';
+import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_promotion_screen.dart';
+import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_tp_explorer_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/contact_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/list_test.dart';
+import 'package:cidade_conectada/tela_principal/screens/home_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/promotion_screen.dart';
+import 'package:cidade_conectada/tela_principal/screens/tp_explorer_screen.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(MyApp());
 
-class OvtFirstScreen extends StatelessWidget {
+class TouCarFirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: _buildShrineTheme(),
-      title: 'Olho Vivo Tecnologia',
+      title: 'Cidade_Conectada',
       home: MyHomePage(),
     );
   }
@@ -26,14 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final tabs = [
-    // Center(child: Text('Início', style: TextStyle(fontSize: 30))),
-    // TestGridview(),
-    // ListAllProducts(),
-    OvtHomeScreen(),
-    ListTest(),
-    // NewsScreen(),
-    PromotionScreen(),
-    ContactScreen(),
+    TouCarHomeScreen(),
+    TouCarTpExplorerScreen(), // Tela criada para teste
+    TouCarPromotionScreen(),
+    TouCarContactScreen(),
   ];
 
   Widget build(BuildContext context) {
