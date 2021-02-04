@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 // https://github.com/flutter/website/blob/master/examples/layout/lakes/step6/lib/main.dart
 void main() {
   // debugPaintSizeEnabled = true;
-  runApp(HomeScreen());
+  runApp(OvtHomeScreen());
 }
 
-class HomeScreen extends StatelessWidget {
+class OvtHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
@@ -94,7 +94,7 @@ class HomeScreen extends StatelessWidget {
         body: ListView(
           children: [
             Image.network(
-              'https://serpro.gov.br/menu/noticias/noticias-2018/estrategias-governo-eletronico-brasileiro/cidade-conectada-portal-externo.jpg/@@images/9b539d09-3b91-43bf-a1e8-d587f3cccfaa.jpeg',
+              'https://firebasestorage.googleapis.com/v0/b/lojaflutterudemy-d6a31.appspot.com/o/card3.png?alt=media&token=1332e4f6-c2a6-4184-8a4c-b11e141bc650',
               width: 600,
               height: 240,
               fit: BoxFit.contain,

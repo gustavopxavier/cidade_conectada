@@ -1,17 +1,17 @@
+import 'package:cidade_conectada/olho_vivo_tecnologia/ovt_screens/ovt_home_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/contact_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/home_screen.dart';
+import 'package:cidade_conectada/tela_principal/screens/list_test.dart';
 import 'package:cidade_conectada/tela_principal/screens/promotion_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/tp_explorer_screen.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(MyApp());
 
-class FirstScreen extends StatelessWidget {
+class OvtFirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: _buildShrineTheme(),
-      title: 'Cidade_Conectada',
+      title: 'Olho Vivo Tecnologia',
       home: MyHomePage(),
     );
   }
@@ -29,9 +29,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // Center(child: Text('Início', style: TextStyle(fontSize: 30))),
     // TestGridview(),
     // ListAllProducts(),
-    HomeScreen(),
-    TpExplorerScreen(), // Tela criada para teste
-    // ListTest(),
+    OvtHomeScreen(),
+    ListTest(),
     // NewsScreen(),
     PromotionScreen(),
     ContactScreen(),
