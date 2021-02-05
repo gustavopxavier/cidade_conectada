@@ -1,5 +1,4 @@
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_first_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/first_screen.dart';
 import 'package:flutter/material.dart';
 // import 'package:lojavirtualudemy/screens/home_screen.dart';
 
@@ -26,7 +25,6 @@ class TouCarMain extends StatelessWidget {
 
 // import 'package:expansion_card/expansion_card.dart';
 // import 'package:flutter/material.dart';
-
 // void main() => runApp(TouCarMain());
 
 // class TouCarMain extends StatelessWidget {

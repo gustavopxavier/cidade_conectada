@@ -40,6 +40,7 @@ class TouCarPromotionScreen extends StatelessWidget {
                 );
               else
                 return MaterialApp(
+                  debugShowCheckedModeBanner: false,
                   home: Scaffold(
                     backgroundColor: colorScheme.primary,
                     body: TabBarView(

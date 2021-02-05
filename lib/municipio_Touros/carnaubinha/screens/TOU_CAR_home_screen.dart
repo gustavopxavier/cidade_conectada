@@ -85,6 +85,7 @@ class TouCarHomeScreen extends StatelessWidget {
     );
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cidade Conectada',
       home: Scaffold(
         backgroundColor: colorScheme.primary,

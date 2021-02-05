@@ -2,6 +2,7 @@ import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_co
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_home_screen.dart';
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_promotion_screen.dart';
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_tp_explorer_screen.dart';
+import 'package:cidade_conectada/tela_principal/screens/first_screen.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(MyApp());
@@ -10,6 +11,7 @@ class TouCarFirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: _buildShrineTheme(),
       title: 'Carnaubinha Conectada',
       home: Scaffold(
@@ -17,7 +19,14 @@ class TouCarFirstScreen extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             tooltip: 'Voltar para a página inicial do App',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FirstScreen(),
+                ),
+              );
+            },
           ),
           title: Text(''),
           backgroundColor: Colors.transparent,
