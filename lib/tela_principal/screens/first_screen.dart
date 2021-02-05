@@ -1,6 +1,6 @@
 import 'package:cidade_conectada/tela_principal/screens/contact_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/home_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/promotion_screen.dart';
+import 'package:cidade_conectada/tela_principal/screens/tp_city_screen.dart';
 import 'package:cidade_conectada/tela_principal/screens/tp_explorer_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +10,7 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: _buildShrineTheme(),
       title: 'Cidade_Conectada',
       home: MyHomePage(),
@@ -33,7 +34,8 @@ class _MyHomePageState extends State<MyHomePage> {
     TpExplorerScreen(), // Tela criada para teste
     // ListTest(),
     // NewsScreen(),
-    PromotionScreen(),
+    // PromotionScreen(),
+    TpCityScreen(),
     ContactScreen(),
   ];
 
@@ -67,8 +69,8 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.shopping_basket),
           ),
           BottomNavigationBarItem(
-            label: 'Destaques',
-            icon: Icon(Icons.fiber_new_sharp),
+            label: 'Cidades',
+            icon: Icon(Icons.location_city),
           ),
           BottomNavigationBarItem(
             label: 'Contatos',
