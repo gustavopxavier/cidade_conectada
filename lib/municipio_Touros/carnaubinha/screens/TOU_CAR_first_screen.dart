@@ -2,10 +2,6 @@ import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_co
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_home_screen.dart';
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_promotion_screen.dart';
 import 'package:cidade_conectada/municipio_Touros/carnaubinha/screens/TOU_CAR_tp_explorer_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/contact_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/home_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/promotion_screen.dart';
-import 'package:cidade_conectada/tela_principal/screens/tp_explorer_screen.dart';
 import 'package:flutter/material.dart';
 
 // void main() => runApp(MyApp());
@@ -15,10 +11,37 @@ class TouCarFirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: _buildShrineTheme(),
-      title: 'Cidade_Conectada',
-      home: MyHomePage(),
+      title: 'Carnaubinha Conectada',
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            tooltip: 'Voltar para a página inicial do App',
+            onPressed: () {},
+          ),
+          title: Text(''),
+          backgroundColor: Colors.transparent,
+          actions: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {},
+              ),
+            )
+          ],
+        ),
+        body: MyHomePage(),
+      ),
     );
   }
+  // Widget build(BuildContext context) {
+  //   return MaterialApp(
+  //     theme: _buildShrineTheme(),
+  //     title: 'Carnaubinha Conectada',
+  //     home: MyHomePage(),
+  //   );
+  // }
 }
 
 class MyHomePage extends StatefulWidget {
@@ -58,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
         iconSize: 30,
         items: [
           BottomNavigationBarItem(
-            label: 'Início',
+            label: 'Carnaubinha',
             icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(

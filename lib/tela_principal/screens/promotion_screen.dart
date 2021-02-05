@@ -1,3 +1,4 @@
+import 'package:cidade_conectada/municipio_Touros/carnaubinha/TOU_CAR_main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class PromotionScreen extends StatelessWidget {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Produtos em Promoção"),
+            title: Text("Cidades em Destaque"),
             backgroundColor: colorScheme.primaryVariant,
             centerTitle: true,
             bottom: TabBar(
@@ -32,7 +33,7 @@ class PromotionScreen extends StatelessWidget {
             ),
           ),
           body: StreamBuilder(
-            stream: Firestore.instance.collection("promotion").snapshots(),
+            stream: Firestore.instance.collection("touros_RN").snapshots(),
             builder: (_, snapshot) {
               if (!snapshot.hasData)
                 return Center(
@@ -101,39 +102,51 @@ class PromotionScreen extends StatelessWidget {
                           itemBuilder: (_, index) {
                             DocumentSnapshot data =
                                 snapshot.data.documents[index];
-                            return Scaffold(
-                              body: GridTile(
-                                child: Card(
-                                  child: Image.network(
-                                    data["image"],
-                                    fit: BoxFit.contain,
+                            return GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (_) {
+                                      return TouCarMain();
+                                    },
                                   ),
-                                ),
-                                footer: Column(
-                                  children: [
-                                    Padding(
-                                      padding: EdgeInsets.all(16.0),
-                                      child: Text(
-                                        data['title'],
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 38.0,
-                                        ),
-                                      ),
+                                );
+                              },
+                              child: Scaffold(
+                                body: GridTile(
+                                  child: Card(
+                                    child: Image.network(
+                                      data["image"],
+                                      fit: BoxFit.contain,
                                     ),
-                                    Padding(
-                                      padding: EdgeInsets.all(16.0),
-                                      child: Text(
-                                        data['description'],
-                                        textAlign: TextAlign.justify,
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 18.0,
+                                  ),
+                                  footer: Column(
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsets.all(16.0),
+                                        child: Text(
+                                          data['title'],
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 38.0,
+                                          ),
                                         ),
                                       ),
-                                    )
-                                  ],
+                                      Padding(
+                                        padding: EdgeInsets.all(16.0),
+                                        child: Text(
+                                          data['description'],
+                                          textAlign: TextAlign.justify,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 18.0,
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             );
